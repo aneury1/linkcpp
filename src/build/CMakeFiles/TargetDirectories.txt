@@ -1,0 +1,3 @@
+/usr/src/linkcpp/src/build/CMakeFiles/rebuild_cache.dir
+/usr/src/linkcpp/src/build/CMakeFiles/linkcpp.dir
+/usr/src/linkcpp/src/build/CMakeFiles/edit_cache.dir

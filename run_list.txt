@@ -1,0 +1,13 @@
+#build image
+docker build -t linkcpp . 
+#run image interactive
+docker run -it linkcpp:latest bash
+#find something.
+find /usr/ -name libboost*.*
+#map volume folder
+docker run -v <host>:<container> -ti linkcpp  bash 
+or 
+docker run -v $PWD:/usr/src/linkcpp  -ti linkcpp bash
+
+#mapping port between host:contaioner and Enviroment var 
+docker run -v $PWD:/usr/src/linkcpp  -p 8082:8081  -e PORT=8081 -ti linkcpp bash
