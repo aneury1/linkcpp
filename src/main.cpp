@@ -13,6 +13,6 @@ int main(int argc, char *argv[])
 
     char *szport = getenv("PORT");
     uint16_t  shPort = (uint16_t)(szport==nullptr?8080:stoi(szport));
-    std::cout <<"application running on port "<< shPort<<"\n";
+    std::cout <<"application running on port ["<< shPort<<"]\n";
     app.port(shPort).multithreaded().run();
 }
