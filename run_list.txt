@@ -11,3 +11,16 @@ docker run -v $PWD:/usr/src/linkcpp  -ti linkcpp bash
 
 #mapping port between host:contaioner and Enviroment var 
 docker run -v $PWD:/usr/src/linkcpp  -p 8082:8081  -e PORT=8081 -ti linkcpp bash
+
+#### second part -- deploy directly to heroku app.
+ brew install heroku/brew/heroku
+
+### get the App id from docker container
+docker ps
+
+### copy folder into docker container 
+docker cp . <id>:<path>
+### commit the new application id
+docker commit <id> <new_name>
+
+docker build -t 
